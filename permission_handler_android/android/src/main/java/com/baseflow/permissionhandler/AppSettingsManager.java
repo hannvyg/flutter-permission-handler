@@ -26,8 +26,8 @@ final class AppSettingsManager {
             settingsIntent.addCategory(Intent.CATEGORY_DEFAULT);
             settingsIntent.setData(android.net.Uri.parse("package:" + context.getPackageName()));
             settingsIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            settingsIntent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
-            settingsIntent.addFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
+            // settingsIntent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+            // settingsIntent.addFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
 
             context.startActivity(settingsIntent);
 
